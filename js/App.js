@@ -24,10 +24,11 @@ var app = (function() {
 
 	    // public globals etc should be created in this space
 		self.publicboolean = true;
+		self.canvasMap = {};
 
 		// initialization placeholder
         self.init = function() {
-
+        	self.canvasMap = new MapCanvas();
     	}
 		
 		// main loop placeholder
@@ -43,8 +44,8 @@ var app = (function() {
 
 // With all that done, time to initiate and run the app!
 $(document).ready( function() {
-
+	
     app.init();
     app.run();
-
+    
 });

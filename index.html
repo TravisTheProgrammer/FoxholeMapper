@@ -3,12 +3,16 @@
     <head>
         <title>Foxhole Mapper</title>
 
-        <!-- jquery and jquery ui CDNs -->
+        <!-- CDNs -->
         <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
         <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'></script>
         <link rel='stylesheet' href='https://code.jquery.com/ui/1.11.4/themes/ui-darkness/jquery-ui.css'>
 		
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.17/fabric.min.js'></script>
+		
         <!-- Load local libraries here -->
+        <script src='js/mapcanvas.js'></script>
+        
 		<script src='js/App.js'></script>
         
         <!-- Local styles -->
@@ -34,7 +38,7 @@
 	            </aside>
             
                 <div id='app-area' class='content'>
-                	<div class='test-text' >main app</div>    
+                	<canvas id='map-canvas'></canvas>  
                 </div>
                 
                 
